@@ -1,4 +1,279 @@
 /* CSS GOES HERE */
+.navigation {
+    display: flex;
+    height: 77px;
+    padding: 10px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
+    align-self: stretch;
+    background: #515D56;
+    width: 100%;
+ 
+}
+
+.mainhead {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    height: 700px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self:normal;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.acontainer{
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.aboutinfo {
+    align-self: stretch;
+    color: #000;
+font-family: Lato;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.aboutinfo p {
+    width: 100%; 
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro {
+    display: flex;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex: .6 0 0;
+    align-self: stretch;
+
+color: #000;
+font-family: Lato;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+background: #CFE5D1;
+
+}
+
+.iconscon{
+    display: flex;
+    padding: 30px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icons{
+    display: flex;
+padding: 10px 0px;
+justify-content: center;
+align-items: flex-start;
+align-content: flex-start;
+gap: 40px;
+align-self: stretch;
+flex-wrap: wrap;
+}
+
+.van {
+    border-radius: 0px 0px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about {
+    display: flex;
+padding: 30px 40px;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+align-self: stretch;
+background: var(--light-green, #F4FFF5);
+}
+.skills {
+    display: flex;
+    padding: 40px 40px 30px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background: #CFE5D1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery{
+    display: flex;
+padding: 20px 40px 30px 40px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 85px;
+align-self: stretch;
+background: var(--light-green, #F4FFF5);
+}
+
+.title{
+
+color: #000;
+text-align: center;
+font-family: Lato;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.pcontainer{
+    display: flex;
+justify-content: center;
+align-items: flex-start;
+gap: 45px;
+}
+
+.project{
+    display: flex;
+width: 500px;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+gap: 10px;
+}
+h4{
+    color: #000;
+font-family: Lato;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+h3{
+    color: #FFF;
+font-family: Lato;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+p{
+    color: #000;
+font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.faqs{
+    display: flex;
+padding: 30px 40px 40px 40px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 35px;
+align-self: stretch;
+}
+
+.ques{
+    display: flex;
+padding: 30px 0px;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+align-self: stretch;
+}
+
+.qa{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 13px 34px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+
+    border-radius: 15px;
+background: #443232;
+}
+
+.cfoot li{
+    color: #FFF;
+font-family: Lato;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.citem{
+    display: flex;
+padding: 30px 0px;
+justify-content:center;
+align-items: flex-start;
+gap: 100px;
+}
+.ccont{
+    display: flex;
+padding: 15px 40px;
+flex-direction: row;
+align-items: flex-start;
+align-self: stretch;
+background: #7E6F6F;
+}
+
+.cfoot{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+h5{
+    color: #FFF;
+font-family: Lato;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.fcon{
+    display: flex;
+padding: 10px 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+background: #000;
+}
+
+h6{
+    color: #FFF;
+font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
 html {
     scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,7 +292,7 @@ section {
     padding: 60px 40px;
 }
 section:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #CFE5D1;
 }
 .container {
     height: 100%;

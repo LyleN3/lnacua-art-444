@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="refresh" content="150">
   <title>Welcome to my new website!</title>
-  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <!-- NAVIGATION-->
- <div class="navigation links">
+ <section id="navigation" class="navigation">
  <nav>
   <a href="#header">Home</a>
   <a href="#about">About</a>
@@ -19,35 +19,44 @@
   <a href="#FAQ">FAQ</a>
   <a href="#contact">Contact</a>
  </nav>
- </div>
+</section>
+
 <!-- MAIN HEADER --> 
-  <section id="header" class="header">
-    <div class="container">
-      <img src="images/van.jpg" alt="van" width=" 908" height="661" />
+  <section id="mainheader" class="mainhead">
+    <div class="intro">
       <h1>Hello! Im Lyle Nacua </h1>
+      </div>
+      <div class="van">
+    <img src="images/van.jpg" alt="van" width=" 908" height="661"/>
     </div>
   </section>
   
 <!-- ABOUT SECTION --> 
-<section id="about">
-  <div class="container">
+<section id="about" class="about">
+  <div class="acontainer">
+  <div class="title">
     <h2>About</h2>
+    </div>
+    <div class="aboutinfo">
     <p>Lyle Nacua, grew up with an interest in art and slowly explored this field. He started taking classes in college to find a medium that caught his interests. Jumping from different practices such as drawing, ceramics, web design, and photography. The thing that stood out most was using technology to create designs because it involved technical skills and creativity such as web design and 3d modeling and graphic design. It required understanding the functions of the program and troubleshooting issues to get desired effects.</p>
-   </div>
+</div>
+</div>
 </section>
 
 <!-- SKILLS SECTION -->  
-<section id="skills">
-  <div class="container"> 
+<section id="skills" class="skills">
+  <div class="title"> 
     <h2>Skills</h2>
-    <div class="icons">
+  </div>
+    <div class="iconscon">
+      <div class="icons">
       <img src="images/illustrator.svg" alt="Ai" width="150" height="150" />
       <img src="images/photoshop.svg" alt="Ps" width="150" height="150" />
       <img src="images/maya.svg" alt="Ma" width="150" height="150" />
       <img src="images/land.svg" alt="Pht" width="150" height="150" />
       <img src="images/figma.svg" alt="Fg" width="150" height="150" />
     </div>
-    <h3>Experience using the following:</h3>
+    <h4>Experience using the following:</h4>
     <ul>
       <li>Adobe Illustrator</li>
       <li>Photoshop</li>
@@ -59,9 +68,12 @@
 </section>
 
 <!-- GALLERY SECTION -->  
-<section id="gallery">
-  <div class="container">
+<section id="gallery" class="gallery"> 
+  <div class="title">
     <h2>Gallery</h2>
+  </div>
+
+  <div class="pcontainer">
     <div class="project">
     <img src="images/card.jpg" alt="Card" width="500" height="400" />
        <h4> Lull Studio</h4>
@@ -69,11 +81,13 @@
     </div>
 
     <div class="project">
-    <img src="images/tote.jpg" alt="Tote" width="500" height="400" />
+    <img src="images/tote.jpg" alt="Tote" width="500" height="500" />
        <h4>Abstract Tote</h4>
        <p>This design experimented with colors, creating abstract forms that can be used in designs such as a tote bag.</p>
     </div>
+</div>
 
+<div class="pcontainer">
     <div class="project">
     <img src="images/boba.jpg" alt="Poster" width="500" height="500" />
     <h4>Abstract Poster</h4>
@@ -85,8 +99,11 @@
     <h4>Political poster</h4>
     <p>Focuses on the overpopulation of the earth and nonrenewable resources and limited land</p>
     </div>
+</div>
 
+<div class="pcontainer">
     <div class="project">
+      <img src="images/vermist.jpg" alt="Human" width="500" height="400" />
     <h4>Vermist</h4>
     <p>Skin care company the focuses of clean and modern designs. Vermist is hydrayting and healing for your skin.</p>
     </div>
@@ -96,19 +113,15 @@
     <h4>Gutsy</h4>
     <p>Homemade style food blog to share information on places to eat to viewers.</p>
     </div>
-    
-    <div class="project">
-    <img src="images/vermist.jpg" alt="Vermist" width="500" height="400" />
-    <h4>Political Poster</h4>
-    <p>Focuses on the overpopulation of the earth and nonrenewable resources and limited land</p>
-    </div>
-    
+</div>
+
+<div class="pcontainer">  
     <div class="project">
     <img src="images/salty.jpg" alt="Salt" width="500" height="500" />
     <h4>Salt Mine</h4>
     <p>Project captures modern industries and how it affects the environment.</p>
     </div>
-    
+
     <div class="project">
     <img src="images/fisher.jpg" alt="Fisher" width="500" height="400" />
     <h4>Fisher</h4>
@@ -118,40 +131,55 @@
 </section>
 
 <!-- FAQ SECTION -->  
-<section id="FAQ">
+<section id="FAQ" class="faqs">
   <div class="container">
-    <h2>Frequent Asked Questions</h2>
+    <div class="title">
+    <h2>FAQ</h2>
+    </div>
+    <div class="ques">
+      <div class="qa">
       <h3>When will you be graduating from SDSU?</h3>
-      <p>Lyle will be completing academics in Fall of 2025 and attending the graduation ceremony in spring of 2026</p>
+      <p style="color:white;">Lyle will be completing academics in Fall of 2025 and attending the graduation ceremony in spring of 2026</p>
+      </div>
+      <div class="qa">
       <h3>What do you have planned for after graduation?</h3>
-      <p>Lyle plans to go travel to the Philippines and visit his family, then he will look for a job in his field</p>
+      <p style="color:white;">Lyle plans to go travel to the Philippines and visit his family, then he will look for a job in his field</p>
+      </div>
+      <div class="qa">
       <h3>How do I get in touch?</h3>
-      <p>The best way to get in touch is through email and social media</p>
+      <p style="color:white;">The best way to get in touch is through email and social media</p>
+      </div>
+      <div class="qa">
       <h3>How much experience do you have?</h3>
-      <p>Lyle has a growing experience using different programs</p>
+      <p style="color:white;">Lyle has a growing experience using different programs</p>
+      </div>
+  </div>
   </div>
 </section>
 
 <!-- FOOTER SECTION -->  
-<section id="contact">
-  <div class="container">
-    <h3>Socials</h3>
+<section id="contact" class="ccont">
+<div class="citem">
+  <div class="cfoot">
+    <h5>Socials</h5>
     <ul>
       <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
       <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
       <li><a href="https://www.tiktok.com/" target="_blank">Tiktok</a></li>
       <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
     </ul>
-    <h3>Contact</h3>
+
+    <h5>Contact</h5>
     <ul>
       <li>email@email.com</li>
     </ul>
   </div>
+</div>
 </section>
 
 <footer>
-  <div class="container">
-      <p>Lyle Andre Nacua Copywrite © 2025, All Rights Reserved</p>
+  <div class="fcon">
+      <p style="color:white;">Lyle Andre Nacua Copywrite © 2025, All Rights Reserved</h6>
   </div>
 </footer>
 
