@@ -1,22 +1,53 @@
 /* CSS GOES HERE */
 .navigation {
     display: flex;
-    height: 77px;
-    padding: 10px 40px;
+    height: 70px;
+    padding: 0px 0px 20px 0px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 20px;
     justify-content: flex-end;
     align-items: flex-end;
-    gap: 20px;
-    align-self: stretch;
+    align-self:stretch;
     background: #515D56;
-    width: 100%;
- 
+}
+
+.nstyle{
+    color: #FFF;
+    font-family: Lato;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    gap: 20px;
+    margin-right: 40px;
+
+a:link {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+a:hover {
+  color: rgb(186, 137, 201);
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: rgb(0, 67, 12);
+  background-color: transparent;
+  text-decoration: underline;
+}
 }
 
 .mainhead {
     max-width: 100%;
     width: 100%;
+    padding: 0px 0px 80px 0px;
     display: flex;
     height: 700px;
     justify-content: space-between;
@@ -46,19 +77,20 @@ line-height: normal;
 }
 
 .aboutinfo p {
-    width: 100%; 
+
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0px 40px 0px 40px;
 }
 
 .intro {
     display: flex;
-    padding: 0px 20px;
+    padding: 0px 0px 0px 80px;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    flex: .6 0 0;
+    flex: .7 0 0;
     align-self: stretch;
 
 color: #000;
@@ -94,14 +126,31 @@ flex-wrap: wrap;
 }
 
 .van {
-    border-radius: 0px 0px 0px 0px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 50%;
+}
+
+.vanimage{
+    border-radius: 0px 0px 0px 60px;
+    width: 100%;
+}
+.simage1{
+    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.simage2{
+    height: 500px;
+    width:100%;
+    border-radius: 20px;
+    object-fit: cover;
+
 }
 
 .about {
     display: flex;
-padding: 30px 40px;
+padding: 0px 0px 50px 0px;
 flex-direction: column;
 align-items: center;
 gap: 20px;
@@ -110,7 +159,7 @@ background: var(--light-green, #F4FFF5);
 }
 .skills {
     display: flex;
-    padding: 40px 40px 30px 30px;
+    padding: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -123,7 +172,7 @@ background: var(--light-green, #F4FFF5);
 
 .gallery{
     display: flex;
-padding: 20px 40px 30px 40px;
+padding: 0px 0px 60px 0px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -163,8 +212,10 @@ h4{
 font-family: Lato;
 font-size: 20px;
 font-style: normal;
-font-weight: 500;
+font-weight: 700;
 line-height: normal;
+display: flex;
+margin: 10px;
 }
 h3{
     color: #FFF;
@@ -182,11 +233,27 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+display: flex;
+margin: 10px;
 }
+
+ul.b {
+    list-style-type: square;
+}
+.fl li{
+    color: #000;
+font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: flex;
+margin: 10px;
+  }
 
 .faqs{
     display: flex;
-padding: 30px 40px 40px 40px;
+padding: 30px 0px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -223,17 +290,39 @@ font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+
+a:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+      color: rgb(255, 255, 255);
+      background-color: transparent;
+      text-decoration: none;
+    }
+  a:hover {
+    color: rgb(186, 137, 201);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: rgb(0, 67, 12);
+    background-color: transparent;
+    text-decoration: underline;
+  }
 }
 .citem{
     display: flex;
-padding: 30px 0px;
-justify-content:center;
+padding: 30px 60px;
+justify-content:flex-end;
 align-items: flex-start;
 gap: 100px;
 }
 .ccont{
     display: flex;
-padding: 15px 40px;
+    width:100%;
+padding: auto;
 flex-direction: row;
 align-items: flex-start;
 align-self: stretch;
@@ -243,8 +332,8 @@ background: #7E6F6F;
 .cfoot{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    align-items:center;
+   
 }
 
 h5{
@@ -254,13 +343,19 @@ font-size: 24px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+display: flex;
+margin: 5px 0px;
+
+
 }
 
 .fcon{
     display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 padding: 10px 10px;
 justify-content: center;
-align-items: center;
 gap: 10px;
 align-self: stretch;
 background: #000;
@@ -274,10 +369,12 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+
 html {
     scroll-behavior: smooth;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lato, Arial, Helvetica, sans-serif;
 }
+
 body {
     margin: 0;
 	padding: 0;
@@ -289,7 +386,7 @@ body {
 section {
     width: 100%;
     height: 100%;
-    padding: 60px 40px;
+    padding: auto;
 }
 section:nth-child(even) {
     background-color: #CFE5D1;
@@ -300,13 +397,15 @@ section:nth-child(even) {
     max-height: 10000;
     max-width: 960px;
     text-align: left;
-    margin: 0 auto;
+    margin: auto;
 }
-h1 {
+.intro h1 {
     font-size: 3em;
 }
 footer {
+    display: flex;
+    width:100%;
     background-color: #000;
     color: #fff;
-    padding: 10px;
+    padding: auto;
 }

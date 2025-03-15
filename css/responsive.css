@@ -1,10 +1,206 @@
 /* TABLET VIEW */
 @media only screen and (max-width:992px) {
+    .navigation {
+        padding: 0px 0px 5px 0px;
+        margin-right: 10px;
+    }
+    .nstyle{
+        font-size: 15px;
+    }
 
+    .mainhead{
+        display: flex;
+        align-items:baseline;
+padding-bottom: 30px;
+flex-direction:column-reverse;
+height:auto;
+
+    }
+    .intro {
+        align-self:flex-start;
+        align-items:flex-start;
+        padding: 0px 30px;
+
+    }
+    .van {
+        width: 100%;
+        height: auto;
+    }
+    .vanimage{
+        border-radius: 0px;
+    }
+
+
+
+
+    .intro h1 {
+        font-size: 1em;
+    }
+
+    .title h2{
+        font-size: 30px;
+
+    }
+    .project{
+        width: 300px;
+    }
+
+    .simage1{
+        height: 200px;
+    }
+    .simage2{
+        height: 300px;
+    }
+    .icons{
+        margin: 0px 80px;
+    }
+
+    .iconscon{
+        margin: 30px 50px;
+    }
+    .ques{
+        margin: 0px 50px;
+    }
+    .citem{
+        gap: 50px;
+        padding: 30px 30px;
+    }
 }
 
 
 /* MOBILE VIEW */
 @media only screen and (max-width: 478px) {
-  
+
+    .navigation {
+        padding: 0px 0px 3px 0px;
+        margin-right: 8px;
+    }
+    .nstyle{
+        font-size: 8px;
+    }
+
+    .mainhead{
+        display: flex;
+        align-items:baseline;
+padding-bottom: 10px;
+flex-direction:column-reverse;
+height:auto;
+
+    }
+    .intro {
+        align-self:flex-start;
+        align-items:flex-start;
+        padding: 0px 5%;
+
+    }
+    .van {
+        width: 100%;
+        height: 150;
+    }
+    .vanimage{
+        border-radius: 0px;
+    }
+
+    .mainhead{
+        display: flex;
+        align-items:baseline;
+padding-bottom: 30px;
+flex-direction:column-reverse;
+height:auto;
+
+    }
+    .intro {
+        align-self:flex-start;
+        align-items:flex-start;
+        padding: 0px 30px;
+
+    }
+    .van {
+        width: 100%;
+        height: auto;
+    }
+    .vanimage{
+        border-radius: 0px;
+    }
+
+
+
+
+    .intro h1 {
+        font-size: .8em;
+    }
+
+    .title h2{
+        font-size: 24px;
+
+    }
+    .project{
+        width: 300px;
+    }
+
+    .simage1{
+        height: 200px;
+    }
+    .simage2{
+        height: 300px;
+    }
+    .icons{
+        margin: 0px 80px;
+    }
+
+    .iconscon{
+        margin: 15px 25px;
+    }
+    .ques{
+        margin: 0px 25px;
+    }
+    .citem{
+        gap: 30px;
+        padding: 15px 15px;
+    }
+
+    .gallery{
+
+    gap: 20px;
+
+    }
+    
+.pcontainer{
+    display:flow-root;
+}
+.project{
+    gap: 4px;
+}
+.project p{
+    margin: 0px 0px 40px 6px;
+}
+
+.project h4{
+    font-size: 20px;
+    margin: 5px;
+}
+
+.title h2{
+padding: 0px;
+margin: 0px;
+}
+
+h3 {
+    font-size: 16px;
+}
+h5{
+    font-size: 19px;
+}
+.cfoot li{
+    font-size: 16px;
+}
+.fcon{
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+padding: 0px;
+}
+.fcon p{
+    font-size: 15px;
+}
 }

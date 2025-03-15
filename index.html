@@ -7,11 +7,14 @@
   <meta http-equiv="refresh" content="150">
   <title>Welcome to my new website!</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 <!-- NAVIGATION-->
+
  <section id="navigation" class="navigation">
- <nav>
+ 
+ <nav class="nstyle">
   <a href="#header">Home</a>
   <a href="#about">About</a>
   <a href="#skills">Skills</a>
@@ -19,6 +22,7 @@
   <a href="#FAQ">FAQ</a>
   <a href="#contact">Contact</a>
  </nav>
+ 
 </section>
 
 <!-- MAIN HEADER --> 
@@ -27,7 +31,7 @@
       <h1>Hello! Im Lyle Nacua </h1>
       </div>
       <div class="van">
-    <img src="images/van.jpg" alt="van" width=" 908" height="661"/>
+    <img class="vanimage" src="images/van.jpg" />
     </div>
   </section>
   
@@ -57,13 +61,15 @@
       <img src="images/figma.svg" alt="Fg" width="150" height="150" />
     </div>
     <h4>Experience using the following:</h4>
-    <ul>
+    <div class="fl">
+    <ul class="b">
       <li>Adobe Illustrator</li>
       <li>Photoshop</li>
       <li>MAYA</li>
       <li>Photography</li>
       <li>Figma</li>
     </ul>
+  </div>
   </div>
 </section>
 
@@ -75,13 +81,13 @@
 
   <div class="pcontainer">
     <div class="project">
-    <img src="images/card.jpg" alt="Card" width="500" height="400" />
+    <img class="simage1" src="images/card.jpg" alt="Card" />
        <h4> Lull Studio</h4>
        <p>This project was a logo design created for an entertainment company. It uses colors to represent the fun and professional designs to convey the company's branding.</p>
     </div>
 
     <div class="project">
-    <img src="images/tote.jpg" alt="Tote" width="500" height="500" />
+    <img class="simage2" src="images/tote.jpg" alt="Tote"/>
        <h4>Abstract Tote</h4>
        <p>This design experimented with colors, creating abstract forms that can be used in designs such as a tote bag.</p>
     </div>
@@ -89,13 +95,13 @@
 
 <div class="pcontainer">
     <div class="project">
-    <img src="images/boba.jpg" alt="Poster" width="500" height="500" />
+    <img class="simage2" src="images/boba.jpg" alt="Poster"/>
     <h4>Abstract Poster</h4>
     <p>Explored the use of shapes to create a poster.</p>
     </div>
 
     <div class="project">
-    <img src="images/human.jpg" alt="Human" width="500" height="400" />
+    <img class="simage1" src="images/human.jpg" alt="Human" />
     <h4>Political poster</h4>
     <p>Focuses on the overpopulation of the earth and nonrenewable resources and limited land</p>
     </div>
@@ -103,13 +109,13 @@
 
 <div class="pcontainer">
     <div class="project">
-      <img src="images/vermist.jpg" alt="Human" width="500" height="400" />
+      <img class="simage2" src="images/vermist.jpg" alt="Human" />
     <h4>Vermist</h4>
     <p>Skin care company the focuses of clean and modern designs. Vermist is hydrayting and healing for your skin.</p>
     </div>
 
     <div class="project">
-    <img src="images/gutsy.jpg" alt="Gutsy" width="500" height="500" />
+    <img class="simage1" src="images/gutsy.jpg" alt="Gutsy" />
     <h4>Gutsy</h4>
     <p>Homemade style food blog to share information on places to eat to viewers.</p>
     </div>
@@ -117,13 +123,13 @@
 
 <div class="pcontainer">  
     <div class="project">
-    <img src="images/salty.jpg" alt="Salt" width="500" height="500" />
+    <img class="simage1" src="images/salty.jpg" alt="Salt" />
     <h4>Salt Mine</h4>
     <p>Project captures modern industries and how it affects the environment.</p>
     </div>
 
     <div class="project">
-    <img src="images/fisher.jpg" alt="Fisher" width="500" height="400" />
+    <img class="simage2" src="images/fisher.jpg" alt="Fisher"  />
     <h4>Fisher</h4>
     <p>Documentation of peoples day to day lives and capturing them in the moment.</p>
     </div>
@@ -168,20 +174,23 @@
       <li><a href="https://www.tiktok.com/" target="_blank">Tiktok</a></li>
       <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
     </ul>
-
+  </div>
+  <div class="cfoot">
     <h5>Contact</h5>
     <ul>
-      <li>email@email.com</li>
+      <li>lnacua@sdsu.edu</li>
     </ul>
   </div>
 </div>
 </section>
+
 
 <footer>
   <div class="fcon">
       <p style="color:white;">Lyle Andre Nacua Copywrite © 2025, All Rights Reserved</h6>
   </div>
 </footer>
+
 
 <script src="js/script.js"></script>
 </body>
