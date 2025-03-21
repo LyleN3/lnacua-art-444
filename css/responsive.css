@@ -1,5 +1,28 @@
 /* TABLET VIEW */
 @media only screen and (max-width:992px) {
+.nstyle{
+    ul {
+        display: inline;
+        margin: 0;
+        padding: 0;
+      }
+      ul li {display: inline-block;}
+      ul li:hover {background: #555;}
+      ul li:hover ul {display: block;}
+      ul li ul {
+        position: absolute;
+        width: 200px;
+        display: none;
+      }
+      ul li ul li { 
+        background: #555; 
+        display: block; 
+      }
+      ul li ul li a {display:block !important;} 
+      ul li ul li:hover {background: #666;}
+    }
+
+
     .navigation {
         padding: 0px 0px 5px 0px;
         margin-right: 10px;
@@ -17,7 +40,6 @@ height:auto;
 
     }
     .intro {
-        align-self:flex-start;
         align-items:flex-start;
         padding: 0px 30px;
 
@@ -31,10 +53,29 @@ height:auto;
     }
 
 
+    @keyframes headas {
+        from {transform: translateX(-600px);}
+        to {transform: translateX(0);}
+    }
+    .intro h1{
+        position: relative;
+      animation-name: headas;
+      animation-duration: 2.5s;
+    }
+
 
 
     .intro h1 {
         font-size: 1em;
+    }
+
+    .acontainer {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .gallery {
+        gap: 40px;
     }
 
     .title h2{
@@ -56,7 +97,8 @@ height:auto;
     }
 
     .iconscon{
-        margin: 30px 50px;
+        margin: 0px 50px;
+        padding: 0px 0px 30px 0px;
     }
     .ques{
         margin: 0px 50px;
@@ -64,6 +106,19 @@ height:auto;
     .citem{
         gap: 50px;
         padding: 30px 30px;
+    }
+
+    .faqs{
+        padding-top: 0px;
+    }
+
+    .ques {
+        padding: 20px;
+    }
+
+    .qa h3{
+        margin-top: 5px;
+        margin-bottom: 10px;
     }
 }
 
@@ -74,6 +129,7 @@ height:auto;
     .navigation {
         padding: 0px 0px 3px 0px;
         margin-right: 8px;
+        height: 20px;
     }
     .nstyle{
         font-size: 8px;
@@ -82,35 +138,26 @@ height:auto;
     .mainhead{
         display: flex;
         align-items:baseline;
-padding-bottom: 10px;
-flex-direction:column-reverse;
-height:auto;
-
+        padding: 0px;
+        flex-direction:column-reverse;
+        height:auto;
     }
+
+    @keyframes headas {
+        from {transform: translateX(-400px);}
+        to {transform: translateX(0);}
+    }
+
+    .intro h1{
+        position: relative;
+      animation-name: headas;
+      animation-duration: 2s;
+    }
+
+
+
+
     .intro {
-        align-self:flex-start;
-        align-items:flex-start;
-        padding: 0px 5%;
-
-    }
-    .van {
-        width: 100%;
-        height: 150;
-    }
-    .vanimage{
-        border-radius: 0px;
-    }
-
-    .mainhead{
-        display: flex;
-        align-items:baseline;
-padding-bottom: 30px;
-flex-direction:column-reverse;
-height:auto;
-
-    }
-    .intro {
-        align-self:flex-start;
         align-items:flex-start;
         padding: 0px 30px;
 
@@ -123,6 +170,19 @@ height:auto;
         border-radius: 0px;
     }
 
+    .about {
+        padding: 30px 0px;
+    }
+    .iconscon{
+        padding: 0px;
+    }
+    .skills{
+        padding: 30px 0px;
+    }
+    .gallery{
+        padding: 30px 0px;
+        gap: 0px;
+    }
 
 
 
@@ -159,11 +219,6 @@ height:auto;
         padding: 15px 15px;
     }
 
-    .gallery{
-
-    gap: 20px;
-
-    }
     
 .pcontainer{
     display:flow-root;
@@ -183,6 +238,10 @@ height:auto;
 .title h2{
 padding: 0px;
 margin: 0px;
+}
+
+.faqs{
+    padding: 30px 0px;
 }
 
 h3 {
