@@ -1,31 +1,95 @@
 /* CSS GOES HERE */
 
   
+.navigation.dark-mode {
+    background-color: #222820;
+    color: white;
+  }
+
+  .mainhead.dark-mode {
+    background-color: #343E31;
+    color: #CFE5D1;
+  }
+
+  .intro.dark-mode {
+    color: #CFE5D1;
+  }
+
+  .about.dark-mode {
+    background-color: #4A4D47;
+    color: #F4FFF5;
+  }
+
+  .skills.dark-mode {
+    background-color: #343E31;
+    color: #CFE5D1;
+  }
+
+  .gallery.dark-mode {
+    background-color: #4A4D47;
+    color: #F4FFF5;
+  }
+
+  .faqs.dark-mode {
+    background-color: #343E31;
+    color: #CFE5D1;
+  }
+
+  .qa.dark-mode {
+    background-color: #282121;
+    color: white;
+    ;
+  }
+  
+  .ccont.dark-mode {
+    background-color: #332E2E;
+    color: white;
+  }
+
+  .icon.dark-mode {
+    background-color: #CFE5D1;
+    color: white;
+  }
+
+
+
   .topnav {
+    display: none;
     overflow: hidden;
-    background-color: #000000;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0px 0px 0px 0px;
   }
   
   .topnav #myLinks {
     display: none;
-
   }
   
   .topnav a {
     color: white;
-    padding: 14px 16px;
+    padding: 37px 37px;
     text-decoration: none;
     font-size: 17px;
     display: block;
   }
   
+ 
   .topnav a.icon {
-    background: black;
     display: block;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
+    width: 1px;
+    height: 1px;
+    width: 100%;
+    object-fit: fill;
+  }
+  .topnav img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 11px;
   }
   
   .topnav a:hover {
@@ -107,7 +171,7 @@ a:active {
 
 .aboutinfo {
     align-self: stretch;
-    color: #000;
+   
 font-family: Lato;
 font-size: 18px;
 font-style: normal;
@@ -132,13 +196,13 @@ line-height: normal;
     flex: .7 0 0;
     align-self: stretch;
 
-color: #000;
+
 font-family: Lato;
 font-size: 30px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-background: #CFE5D1;
+
 
 }
 
@@ -234,7 +298,7 @@ background: var(--light-green, #F4FFF5);
 
 .title{
 
-color: #000;
+
 text-align: center;
 font-family: Lato;
 font-size: 36px;
@@ -259,7 +323,7 @@ align-items: flex-start;
 gap: 10px;
 }
 h4{
-    color: #000;
+
 font-family: Lato;
 font-size: 20px;
 font-style: normal;
@@ -278,7 +342,7 @@ line-height: normal;
 }
 
 p{
-    color: #000;
+  
 font-family: Lato;
 font-size: 16px;
 font-style: normal;
@@ -292,7 +356,7 @@ ul.b {
     list-style-type: square;
 }
 .fl li{
-    color: #000;
+    
 font-family: Lato;
 font-size: 16px;
 font-style: normal;
@@ -331,7 +395,7 @@ align-self: stretch;
     align-self: stretch;
 
     border-radius: 15px;
-background: #443232;
+    background: #443232;
 }
 
 .cfoot li{

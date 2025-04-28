@@ -25,7 +25,7 @@
 
 
   <!-- Top Navigation Menu -->
-  <div class="topnav">
+  <div id="topnav" class="topnav">
     <a href="#home" class="active"></a>
     <div id="myLinks">
       <a href="#header">Home</a>
@@ -35,8 +35,8 @@
       <a href="#FAQ">FAQ</a>
       <a href="#contact">Contact</a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
+    <a href="javascript:void(0);" id="topnavicon" class="icon" onclick="myFunction()">
+    <img src="images/burger-menu-svgrepo-com.svg" alt="Ai" width="50" height="50"/>
     </a>
   </div>
   
@@ -51,12 +51,32 @@
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
-      x.style.display = "grid";
+      x.style.display = "block";
     }
   }
   </script>
   
+  <button onclick="dark()">dark mode</button>
 
+  <script>
+  function dark() {
+     document.getElementById("navigation").classList.toggle("dark-mode");
+     document.getElementById("topnavicon").classList.toggle("dark-mode");
+     document.getElementById("mainheader").classList.toggle("dark-mode");
+     document.getElementById("intro").classList.toggle("dark-mode");
+     document.getElementById("about").classList.toggle("dark-mode");
+     document.getElementById("skills").classList.toggle("dark-mode");
+     document.getElementById("gallery").classList.toggle("dark-mode");
+     document.getElementById("faqs").classList.toggle("dark-mode");
+     document.getElementById("faqsA").classList.toggle("dark-mode");
+     document.getElementById("faqsB").classList.toggle("dark-mode");
+     document.getElementById("faqsC").classList.toggle("dark-mode");
+     document.getElementById("faqsD").classList.toggle("dark-mode");
+     document.getElementById("contact").classList.toggle("dark-mode");
+     
+
+  }
+  </script>
 
   </div>
 </div>
@@ -65,7 +85,7 @@
 
 <!-- MAIN HEADER --> 
   <section id="mainheader" class="mainhead">
-    <div class="intro">
+    <div id="intro" class="intro">
       <h1>Hello! Im Lyle Nacua </h1>
       </div>
       <div class="van">
@@ -75,11 +95,11 @@
   
 <!-- ABOUT SECTION --> 
 <section id="about" class="about">
-  <div class="acontainer">
-  <div class="title">
+  <div id="about" class="acontainer">
+  <div id="about" class="title">
     <h2>About</h2>
     </div>
-    <div class="aboutinfo">
+    <div id="about" class="aboutinfo">
     <p>Lyle Nacua, grew up with an interest in art and slowly explored this field. He started taking classes in college to find a medium that caught his interests. Jumping from different practices such as drawing, ceramics, web design, and photography. The thing that stood out most was using technology to create designs because it involved technical skills and creativity such as web design and 3d modeling and graphic design. It required understanding the functions of the program and troubleshooting issues to get desired effects.</p>
 </div>
 </div>
@@ -175,25 +195,25 @@
 </section>
 
 <!-- FAQ SECTION -->  
-<section id="FAQ" class="faqs">
-  <div class="container">
+<section id="faqs" class="faqs">
+  <div id="faqs" class="container">
     <div class="title">
     <h2>FAQ</h2>
     </div>
-    <div class="ques">
-      <div class="qa">
+    <div id="faqs" class="ques">
+      <div id="faqsA" class="qa">
       <h3>When will you be graduating from SDSU?</h3>
       <p style="color:white;">Lyle will be completing academics in Fall of 2025 and attending the graduation ceremony in spring of 2026</p>
       </div>
-      <div class="qa">
+      <div id="faqsB" class="qa">
       <h3>What do you have planned for after graduation?</h3>
       <p style="color:white;">Lyle plans to go travel to the Philippines and visit his family, then he will look for a job in his field</p>
       </div>
-      <div class="qa">
+      <div id="faqsC" class="qa">
       <h3>How do I get in touch?</h3>
       <p style="color:white;">The best way to get in touch is through email and social media</p>
       </div>
-      <div class="qa">
+      <div id="faqsD" class="qa">
       <h3>How much experience do you have?</h3>
       <p style="color:white;">Lyle has a growing experience using different programs</p>
       </div>
@@ -203,8 +223,8 @@
 
 <!-- FOOTER SECTION -->  
 <section id="contact" class="ccont">
-<div class="citem">
-  <div class="cfoot">
+<div id="contact" class="citem">
+  <div id="contact" class="cfoot">
     <h5>Socials</h5>
     <ul>
       <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
