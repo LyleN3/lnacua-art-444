@@ -3,6 +3,7 @@
 
     .topnav{
         display: block;
+        z-index:10;
     }
 
 
@@ -132,6 +133,10 @@ height:auto;
 
 /* MOBILE VIEW */
 @media only screen and (max-width: 478px) {
+
+    .navigation button{
+        font-size: 10px;
+    }
 
     .topnav{
         display: block;

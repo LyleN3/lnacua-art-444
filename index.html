@@ -19,20 +19,22 @@
   <a href="#about">About</a>
   <a href="#skills">Skills</a>
   <a href="#gallery">Work</a>
-  <a href="#FAQ">FAQ</a>
+  <a href="#faqs">FAQ</a>
   <a href="#contact">Contact</a>
  </nav>
+
+ <button onclick="dark()">dark mode</button>
 
 
   <!-- Top Navigation Menu -->
   <div id="topnav" class="topnav">
     <a href="#home" class="active"></a>
-    <div id="myLinks">
+    <div id="myLinks" class="links">
       <a href="#header">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#gallery">Work</a>
-      <a href="#FAQ">FAQ</a>
+      <a href="#faqs">FAQ</a>
       <a href="#contact">Contact</a>
     </div>
     <a href="javascript:void(0);" id="topnavicon" class="icon" onclick="myFunction()">
@@ -40,54 +42,6 @@
     </a>
   </div>
   
-
-  
-  <!-- End smartphone / tablet look -->
-  </div>
-  <script>
-  const d = new Date(); // get current date
-  const hour = d.getHours(); // get current hour
-  
-  if (hour < 18) {
-  element.classList.toggle("myFunction");
-  }
-  else if (hour > 18) {
-  element.classList.toggle("myFunction");
-  }
-
-  function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
-  </script>
-  
-  <button onclick="dark()">dark mode</button>
-
-  <script>
-  function dark() {
-     document.getElementById("navigation").classList.toggle("dark-mode");
-     document.getElementById("topnavicon").classList.toggle("dark-mode");
-     document.getElementById("mainheader").classList.toggle("dark-mode");
-     document.getElementById("intro").classList.toggle("dark-mode");
-     document.getElementById("about").classList.toggle("dark-mode");
-     document.getElementById("skills").classList.toggle("dark-mode");
-     document.getElementById("gallery").classList.toggle("dark-mode");
-     document.getElementById("faqs").classList.toggle("dark-mode");
-     document.getElementById("faqsA").classList.toggle("dark-mode");
-     document.getElementById("faqsB").classList.toggle("dark-mode");
-     document.getElementById("faqsC").classList.toggle("dark-mode");
-     document.getElementById("faqsD").classList.toggle("dark-mode");
-     document.getElementById("contact").classList.toggle("dark-mode");
-     
-
-  }
-  </script>
-
-  </div>
 </div>
  
 </section>
@@ -258,6 +212,61 @@
   </div>
 </footer>
 
+ <!-- End smartphone / tablet look -->
+</div>
+<script>
+const d = new Date(); // get current date
+const hour = d.getHours(); // get current hour
+
+if (hour > 18) {
+   document.getElementById("navigation").classList.toggle("dark-mode");
+   document.getElementById("topnavicon").classList.toggle("dark-mode");
+   document.getElementById("myLinks").classList.toggle("dark-mode");
+   document.getElementById("mainheader").classList.toggle("dark-mode");
+   document.getElementById("intro").classList.toggle("dark-mode");
+   document.getElementById("about").classList.toggle("dark-mode");
+   document.getElementById("skills").classList.toggle("dark-mode");
+   document.getElementById("gallery").classList.toggle("dark-mode");
+   document.getElementById("faqs").classList.toggle("dark-mode");
+   document.getElementById("faqsA").classList.toggle("dark-mode");
+   document.getElementById("faqsB").classList.toggle("dark-mode");
+   document.getElementById("faqsC").classList.toggle("dark-mode");
+   document.getElementById("faqsD").classList.toggle("dark-mode");
+   document.getElementById("contact").classList.toggle("dark-mode");
+}
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<script>
+function dark() {
+   document.getElementById("navigation").classList.toggle("dark-mode");
+   document.getElementById("topnavicon").classList.toggle("dark-mode");
+   document.getElementById("myLinks").classList.toggle("dark-mode");
+   document.getElementById("mainheader").classList.toggle("dark-mode");
+   document.getElementById("intro").classList.toggle("dark-mode");
+   document.getElementById("about").classList.toggle("dark-mode");
+   document.getElementById("skills").classList.toggle("dark-mode");
+   document.getElementById("gallery").classList.toggle("dark-mode");
+   document.getElementById("faqs").classList.toggle("dark-mode");
+   document.getElementById("faqsA").classList.toggle("dark-mode");
+   document.getElementById("faqsB").classList.toggle("dark-mode");
+   document.getElementById("faqsC").classList.toggle("dark-mode");
+   document.getElementById("faqsD").classList.toggle("dark-mode");
+   document.getElementById("contact").classList.toggle("dark-mode");
+   
+
+}
+</script>
+
+</div>
 
 
 <script src="js/script.js"></script>

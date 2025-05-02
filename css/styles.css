@@ -51,7 +51,15 @@
     color: white;
   }
 
+  .Mylinks.dark-mode {
+    background-color: #CFE5D1;
+    color: white;
+  }
 
+.navigation button {
+  background-color: #CFE5D1;
+  margin-right: 20px;
+}
 
   .topnav {
     display: none;
@@ -64,6 +72,8 @@
   
   .topnav #myLinks {
     display: none;
+    background-color: #000;
+
   }
   
   .topnav a {
