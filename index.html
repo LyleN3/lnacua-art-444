@@ -23,7 +23,13 @@
   <a href="#contact">Contact</a>
  </nav>
 
- <button onclick="dark()">dark mode</button>
+ <button id="ldm" class="ldm" onclick="dark()">
+  <img id="ldm" class="moon" src="images/moon.svg" />
+</button>
+
+<button id="lds" class="lds" onclick="dark()">
+  <img id="lds" class="sun" src="images/sun.svg" />
+</button>
 
 
   <!-- Top Navigation Menu -->
@@ -102,13 +108,13 @@
 
   <div class="pcontainer">
     <div class="project">
-    <img class="simage1" src="images/card.jpg" alt="Card" />
+    <img id="lb" class="simage1" src="images/card.jpg" alt="Card" />
        <h4> Lull Studio</h4>
        <p>This project was a logo design created for an entertainment company. It uses colors to represent the fun and professional designs to convey the company's branding.</p>
     </div>
 
     <div class="project">
-    <img class="simage2" src="images/tote.jpg" alt="Tote"/>
+    <img id="lb" class="simage2" src="images/tote.jpg" alt="Tote"/>
        <h4>Abstract Tote</h4>
        <p>This design experimented with colors, creating abstract forms that can be used in designs such as a tote bag.</p>
     </div>
@@ -116,13 +122,13 @@
 
 <div class="pcontainer">
     <div class="project">
-    <img class="simage2" src="images/boba.jpg" alt="Poster"/>
+    <img id="lb" class="simage2" src="images/boba.jpg" alt="Poster"/>
     <h4>Abstract Poster</h4>
     <p>Explored the use of shapes to create a poster.</p>
     </div>
 
     <div class="project">
-    <img class="simage1" src="images/human.jpg" alt="Human" />
+    <img id="lb" class="simage1" src="images/human.jpg" alt="Human" />
     <h4>Political poster</h4>
     <p>Focuses on the overpopulation of the earth and nonrenewable resources and limited land</p>
     </div>
@@ -130,13 +136,13 @@
 
 <div class="pcontainer">
     <div class="project">
-      <img class="simage2" src="images/vermist.jpg" alt="Human" />
+      <img id="lb" class="simage2" src="images/vermist.jpg" alt="Human" />
     <h4>Vermist</h4>
     <p>Skin care company the focuses of clean and modern designs. Vermist is hydrayting and healing for your skin.</p>
     </div>
 
     <div class="project">
-    <img class="simage1" src="images/gutsy.jpg" alt="Gutsy" />
+    <img id="lb" class="simage1" src="images/gutsy.jpg" alt="Gutsy" />
     <h4>Gutsy</h4>
     <p>Homemade style food blog to share information on places to eat to viewers.</p>
     </div>
@@ -144,13 +150,13 @@
 
 <div class="pcontainer">  
     <div class="project">
-    <img class="simage1" src="images/salty.jpg" alt="Salt" />
+    <img id="lb" class="simage1" src="images/salty.jpg" alt="Salt" />
     <h4>Salt Mine</h4>
     <p>Project captures modern industries and how it affects the environment.</p>
     </div>
 
     <div class="project">
-    <img class="simage2" src="images/fisher.jpg" alt="Fisher"  />
+    <img id="lb" class="simage2" src="images/fisher.jpg" alt="Fisher"  />
     <h4>Fisher</h4>
     <p>Documentation of peoples day to day lives and capturing them in the moment.</p>
     </div>
@@ -199,7 +205,7 @@
   <div class="cfoot">
     <h5>Contact</h5>
     <ul>
-      <li>lnacua@sdsu.edu</li>
+      <li>lnacua7201@sdsu.edu</li>
     </ul>
   </div>
 </div>
@@ -214,6 +220,7 @@
 
  <!-- End smartphone / tablet look -->
 </div>
+
 <script>
 const d = new Date(); // get current date
 const hour = d.getHours(); // get current hour
@@ -235,6 +242,7 @@ if (hour > 18) {
    document.getElementById("contact").classList.toggle("dark-mode");
 }
 
+
 function myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
@@ -247,6 +255,7 @@ function myFunction() {
 
 <script>
 function dark() {
+
    document.getElementById("navigation").classList.toggle("dark-mode");
    document.getElementById("topnavicon").classList.toggle("dark-mode");
    document.getElementById("myLinks").classList.toggle("dark-mode");
@@ -261,10 +270,38 @@ function dark() {
    document.getElementById("faqsC").classList.toggle("dark-mode");
    document.getElementById("faqsD").classList.toggle("dark-mode");
    document.getElementById("contact").classList.toggle("dark-mode");
+   document.getElementById("lds").classList.toggle("dark-mode");
+   document.getElementById("ldm").classList.toggle("dark-mode");
    
 
 }
 </script>
+
+<script>
+  const lightbox=document.createElement('div')
+  lightbox.id = 'lightbox'
+  document.body.appendChild(lightbox)
+
+  const images = document.querySelectorAll("#lb")
+  images.forEach(image => {
+    image.addEventListener('click', e=> {
+      lightbox.classList.add('active')
+      const img = document.createElement('img')
+      img.src = image.src
+      while (lightbox.firstChild){
+        lightbox.removeChild(lightbox.firstChild)
+      }
+      lightbox.appendChild(img)
+    })
+  })
+
+  lightbox.addEventListener('click', e =>{
+    if(e.target !== e.currentTarget) return
+    lightbox.classList.remove('active')
+  })
+
+
+  </script>
 
 </div>
 
